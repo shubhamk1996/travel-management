@@ -1,0 +1,186 @@
+{
+  "trips": [
+    {
+      "id": "trip-kyoto",
+      "name": "A little magic in Kyoto",
+      "destination": "Kyoto, Japan",
+      "startDate": "2027-04-12",
+      "endDate": "2027-04-16",
+      "budget": 280000,
+      "travellers": [
+        {
+          "id": "t-1",
+          "name": "Alex Morgan"
+        },
+        {
+          "id": "t-2",
+          "name": "Jamie Chen"
+        },
+        {
+          "id": "t-3",
+          "name": "Sam Rivera"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a-1",
+          "title": "Explore the old town",
+          "location": "Old Town",
+          "date": "2027-04-12",
+          "start": "13:00",
+          "duration": 120,
+          "cost": 2500,
+          "open": "08:00",
+          "close": "20:00",
+          "fixed": false
+        },
+        {
+          "id": "a-2",
+          "title": "An afternoon at the museum",
+          "location": "City Museum",
+          "date": "2027-04-13",
+          "start": "10:00",
+          "duration": 120,
+          "cost": 4500,
+          "open": "09:00",
+          "close": "17:00",
+          "fixed": true
+        },
+        {
+          "id": "a-3",
+          "title": "Stroll through the gardens",
+          "location": "Botanical Garden",
+          "date": "2027-04-13",
+          "start": "14:00",
+          "duration": 90,
+          "cost": 1800,
+          "open": "09:00",
+          "close": "18:00",
+          "fixed": false
+        },
+        {
+          "id": "a-4",
+          "title": "Taste your way around the market",
+          "location": "Market Square",
+          "date": "2027-04-14",
+          "start": "11:00",
+          "duration": 90,
+          "cost": 6000,
+          "open": "08:00",
+          "close": "19:00",
+          "fixed": false
+        }
+      ],
+      "bookings": [
+        {
+          "id": "b-1",
+          "title": "Flight to Kyoto",
+          "type": "flight",
+          "status": "confirmed",
+          "location": "Airport",
+          "date": "2027-04-12",
+          "start": "08:00",
+          "duration": 120,
+          "cost": 72000
+        },
+        {
+          "id": "b-2",
+          "title": "Riverside Hotel",
+          "type": "hotel",
+          "status": "confirmed",
+          "location": "Riverside Hotel",
+          "date": "2027-04-12",
+          "start": "15:00",
+          "duration": 60,
+          "cost": 86000
+        },
+        {
+          "id": "b-3",
+          "title": "Train to the city",
+          "type": "train",
+          "status": "pending",
+          "location": "Central Station",
+          "date": "2027-04-12",
+          "start": "11:00",
+          "duration": 45,
+          "cost": 9000
+        }
+      ],
+      "expenses": [
+        {
+          "id": "e-1",
+          "title": "Flight tickets",
+          "category": "Flight",
+          "amount": 72000,
+          "paidBy": "t-1",
+          "splitMode": "equal",
+          "shares": {
+            "t-1": 24000,
+            "t-2": 24000,
+            "t-3": 24000
+          },
+          "bookingId": "b-1"
+        },
+        {
+          "id": "e-2",
+          "title": "Dinner reservations",
+          "category": "Food",
+          "amount": 13500,
+          "paidBy": "t-2",
+          "splitMode": "equal",
+          "shares": {
+            "t-1": 4500,
+            "t-2": 4500,
+            "t-3": 4500
+          }
+        }
+      ]
+    },
+    {
+      "id": "trip-lisbon",
+      "name": "Slow days in Lisbon",
+      "destination": "Lisbon, Portugal",
+      "startDate": "2027-06-08",
+      "endDate": "2027-06-12",
+      "budget": 180000,
+      "travellers": [
+        {
+          "id": "t-4",
+          "name": "Alex Morgan b"
+        },
+        {
+          "id": "t-5",
+          "name": "Taylor Brooks"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a-5",
+          "title": "Discover the harbour",
+          "location": "Harbour",
+          "date": "2027-06-09",
+          "start": "10:00",
+          "duration": 120,
+          "cost": 3000,
+          "open": "08:00",
+          "close": "20:00",
+          "fixed": false
+        }
+      ],
+      "bookings": [
+        {
+          "id": "b-4",
+          "title": "Riverside stay",
+          "type": "hotel",
+          "status": "pending",
+          "location": "Riverside Hotel",
+          "date": "2027-06-08",
+          "start": "15:00",
+          "duration": 60,
+          "cost": 64000
+        }
+      ],
+      "expenses": []
+    }
+  ]
+}

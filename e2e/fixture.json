@@ -1,0 +1,25 @@
+{
+  "trips": [{
+    "id": "trip-kyoto",
+    "name": "A little magic in Kyoto",
+    "destination": "Kyoto, Japan",
+    "startDate": "2027-04-12",
+    "endDate": "2027-04-16",
+    "budget": 280000,
+    "travellers": [
+      { "id": "t-1", "name": "Alex Morgan" },
+      { "id": "t-2", "name": "Jamie Chen" },
+      { "id": "t-3", "name": "Sam Rivera" }
+    ],
+    "activities": [
+      { "id": "a-1", "title": "Explore the old town", "location": "Old Town", "date": "2027-04-12", "start": "13:00", "duration": 120, "cost": 2500, "open": "08:00", "close": "20:00", "fixed": false },
+      { "id": "a-2", "title": "An afternoon at the museum", "location": "City Museum", "date": "2027-04-13", "start": "10:00", "duration": 120, "cost": 4500, "open": "09:00", "close": "17:00", "fixed": true }
+    ],
+    "bookings": [
+      { "id": "b-1", "title": "Flight to Kyoto", "type": "flight", "status": "confirmed", "location": "Airport", "date": "2027-04-12", "start": "08:00", "duration": 120, "cost": 72000 }
+    ],
+    "expenses": [
+      { "id": "e-1", "title": "Flight tickets", "category": "Flight", "amount": 72000, "paidBy": "t-1", "splitMode": "equal", "shares": { "t-1": 24000, "t-2": 24000, "t-3": 24000 }, "bookingId": "b-1" }
+    ]
+  }]
+}
